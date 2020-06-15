@@ -55,19 +55,51 @@ The output is shown below:
 
 Parameters:
 
-** start_date ** : str in the form yyyy-mm-dd, default: 365 days ago
+**start_date** : str in the form yyyy-mm-dd, default: 365 days ago
 
 First date to get stock data for
 
-** end_date ** : str in the form yyyy-mm-dd, default: today's date
+**end_date** : str in the form yyyy-mm-dd, default: today's date
 
 Last date to get stock data for
 
-** period ** : str, default: 1d
+**period** : str, default: 1d
 
 Period to get the data. 1d, 1m, etc
 
-** show_plot ** : bool, default: False
+**show_plot** : int 0 or 1, default: 0
 
-Decides whether to plot a graph of the stock's price. Will output a graph if True and will not output a graph if False
+Decides whether to plot a graph of the stock's price. Will output a graph if 1 and will not output a graph if 0
+
+Returns: 
+
+**ticker_df**: 
+
+A dataframe containing the low, open, close, high, adjclose price of the stock and volume for each day 
+
+### get_ma_signal
+
+Parameters:
+
+**ema_short_period**: int, default:10
+
+The period (in days) for which to calculate the short EMA.
+
+**ema_long_period**: int, default: 50
+
+The period (in days) for which to calculate the long EMA.
+
+**show_plot**: int 0 or 1, default: 0
+
+Decides whether to plot a graph of the stock's price and EMA. Will output a graph if 1 and will not output a graph if 0.
+By default 50-day EMA, 10-day EM
+
+Returns:
+
+return_dict: dict of results. The keys are listed below
+
+ma_signal: str, current EMA signal which can be bullish or bearish
+ma_crossover: datetime, datetime of last EMA crossover event
+ma_trend: str, relationship between long and short EMA which can be converging or diverging
+ma_seperation: float, difference in price between long and short EMA
 
