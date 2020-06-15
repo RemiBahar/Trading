@@ -1,5 +1,7 @@
 # Trading
 
+A simple script to perform technical analysis on stocks using the EMA, MACD, OBV, RSI, and Bollinger Band indicators. This script can plot these indicators and find buy/sell signals.
+
 ## Install
 
 The following modules need to be installed using the following commands:
@@ -46,3 +48,26 @@ The output is shown below:
 ![OBV picture](https://github.com/RemiBahar/Trading/blob/master/images/OBV.png)
 ![RSI picture](https://github.com/RemiBahar/Trading/blob/master/images/RSI.png)
 ![BB picture](https://github.com/RemiBahar/Trading/blob/master/images/BB.png)
+
+## Documentation
+
+### get_history
+
+Parameters:
+
+** start_date ** : str in the form yyyy-mm-dd, default: 365 days ago
+
+First date to get stock data for
+
+** end_date ** : str in the form yyyy-mm-dd, default: today's date
+
+Last date to get stock data for
+
+** period ** : str, default: 1d
+
+Period to get the data. 1d, 1m, etc
+
+** show_plot ** : bool, default: False
+
+Decides whether to plot a graph of the stock's price. Will output a graph if True and will not output a graph if False
+
