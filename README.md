@@ -2,6 +2,10 @@
 
 A simple script to perform technical analysis on stocks using the EMA, MACD, OBV, RSI, and Bollinger Band indicators. This script can plot these indicators and find buy/sell signals.
 
+1. [Install](#install)
+2. [Usage](#usage)
+3. [Documentation](#documentation)
+
 ## Install
 
 The following modules need to be installed using the following commands:
