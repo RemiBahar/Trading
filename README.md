@@ -41,5 +41,8 @@ stock_bb_signal = stock.get_bollinger_band_signal(show_plot=1)
 ```
 
 The output is shown below:
-
-
+![EMA picture](https://github.com/RemiBahar/Trading/blob/master/images/EMA.png)
+![MACD picture](https://github.com/RemiBahar/Trading/blob/master/images/MACD.png)
+![OBV picture](https://github.com/RemiBahar/Trading/blob/master/images/OBV.png)
+![RSI picture](https://github.com/RemiBahar/Trading/blob/master/images/RSI.png)
+![BB picture](https://github.com/RemiBahar/Trading/blob/master/images/BB.png)
