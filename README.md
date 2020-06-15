@@ -98,8 +98,11 @@ Returns:
 
 return_dict: dict of results. The keys are listed below
 
-ma_signal: str, current EMA signal which can be bullish or bearish
-ma_crossover: datetime, datetime of last EMA crossover event
-ma_trend: str, relationship between long and short EMA which can be converging or diverging
-ma_seperation: float, difference in price between long and short EMA
+**ma_signal**: str, current EMA signal which can be bullish or bearish
+
+**ma_crossover**: datetime, datetime of last EMA crossover event
+
+**ma_trend**: str, relationship between long and short EMA which can be converging or diverging
+
+**ma_seperation**: float, difference in price between long and short EMA
 
